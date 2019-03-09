@@ -1,0 +1,15 @@
+<% include ../pages/index/header %>
+
+<div class="ui comments">
+    <div class="comment">
+        <a class="avatar" href="/message/<%= message.id %>">
+            <img src="http://4.bp.blogspot.com/-UTInNViFaCo/T2jQdLcR84I/AAAAAAAAA9I/xu5hrrEW2bg/s1600/avatar.jpg" alt="Avatar">
+        </a>
+        <div class="content">
+            <div class="metadata"><%= message.created_at.fromNow() %></div>
+            <div class="text"><%= message.content %></div>
+        </div>
+    </div>
+</div>
+
+<% include ../pages/index/footer%></div>
